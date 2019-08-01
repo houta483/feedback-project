@@ -2,18 +2,18 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import Navbar from './components/Navbar';
 import DefaultPage from './components/DefaultPage';
+import FeedbackLog from './components/FeedbackLog';
+import NextSteps from './components/NextSteps';
 
 
 class App extends React.Component { // components have three parts: 1) state, 2) lifecycle methods, 3) UI
   constructor() {
    super()
-   // put state here
    this.state = {
      view: 0
    }; 
    this.updateView = this.updateView.bind(this);
   }
-// put functionality here
   updateView(number) {
     this.setState({
       view: number
@@ -26,9 +26,13 @@ class App extends React.Component { // components have three parts: 1) state, 2)
       view = <DefaultPage updateView={this.updateView}/>
       break;
 
-      // case 1:
-      //   view = <FeedbackLog updateView={this.updateView}/>
-      //   break;
+      case 1:
+        view = <FeedbackLog updateView={this.updateView}/>
+        break;
+
+      case 2:
+        view= <NextSteps updateView={this.updateView}/>
+        break;
     }
 
     return (

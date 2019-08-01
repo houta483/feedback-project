@@ -16,13 +16,13 @@ class Navbar extends React.Component {
 
   feedbackLog()  {
     fetch('/api/login')
-      .then(this.props.updateView())
+      .then(this.props.updateView(1))
       .catch()
   };
 
   nextSteps()  {
     fetch('/api/login')
-      .then(this.props.updateView(3))
+      .then(this.props.updateView(2))
       .catch()
   };
 
