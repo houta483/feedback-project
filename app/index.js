@@ -19,14 +19,23 @@ class App extends React.Component { // components have three parts: 1) state, 2)
       view: number
     })
   }
-
   render() {
+    let view;
+    switch(this.state.view) {
+      case 0: 
+      view = <DefaultPage updateView={this.updateView}/>
+      break;
+
+      // case 1:
+      //   view = <FeedbackLog updateView={this.updateView}/>
+      //   break;
+    }
+
     return (
       <div>
-        This is a test!
         {/* this is where the passing down of props occours */}
         <Navbar updateView={this.updateView}/>
-        <DefaultPage updateView={this.updateView}/>
+        {view}
       </div>
     )
   }

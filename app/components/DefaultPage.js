@@ -7,7 +7,7 @@ class DefaultPage extends React.Component {
   render() {
     return(
       <div className='defaultPage'>
-        
+        Default Page
       </div>
     )  
   }
