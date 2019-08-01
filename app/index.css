@@ -1,0 +1,54 @@
+body {
+  background: white;
+}
+
+.nav {
+  display: flex;
+  align-items: flex-start;
+  height: 60px;
+  border-style: solid;
+  border-width: 1px;
+  background-color: grey;
+  width: 100%; 
+  position: sticky;
+  top: 50px;
+  justify-content: space-evenly;
+  align-items: center
+}
+
+
+.buttonOne {
+  height: 65%;
+  width: 30%;
+  border-style: solid;
+  border-width: 1px;
+  border-color: grey;
+}
+
+.buttonTwo {
+  height: 65%;
+  width: 30%;
+  border-style: solid;
+  border-width: 1px;
+  border-color: grey;
+
+}
+
+.buttonThree {
+  height: 65%;
+  width: 30%;
+  border-style: solid;
+  border-width: 1px;
+  border-color: grey;
+
+}
+
+.defaultPage {
+  position: relative;
+  top: 40px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: green;
+  height: 50em;
+}
+
